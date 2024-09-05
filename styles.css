@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+  }
+  
+  .solar-system {
+    position: relative;
+    width: 600px;
+    height: 600px;
+  }
+  
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    background-color: rgb(234, 255, 0);
+    border-radius: 50%;
+  }
+  
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px solid rgba(245, 5, 5, 0.423);
+    transform: translate(-50%, -50%);
+    animation: rotate 60s linear infinite;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .planet {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .earth-orbit {
+    width: 250px;
+    height: 250px;
+    animation-duration: 20s;
+  }
+  
+  .earth {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+  }
+  
+  .moon-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+  }
+  
+  .moon {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(199, 195, 195);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mars-orbit {
+    width: 300px;
+    height: 300px;
+    animation-duration: 30s;
+  }
+  
+  .mars {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+  }
+  
+  .jupiter-orbit {
+    width: 350px;
+    height: 350px;
+    animation-duration: 50s;
+  }
+  
+  .jupiter {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(157, 107, 13);
+    animation-duration: 1s;
+  }
